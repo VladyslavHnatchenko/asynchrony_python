@@ -11,10 +11,10 @@ server_socket.listen()
 
 
 def accept_connection(server_socket):
-        client_socket, addr = server_socket.accept()
-        print('Connection from', addr)
+    client_socket, addr = server_socket.accept()
+    print('Connection from', addr)
 
-        to_monitor.append(client_socket)
+    to_monitor.append(client_socket)
 
 
 def send_message(client_socket):
